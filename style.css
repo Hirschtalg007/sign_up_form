@@ -63,3 +63,11 @@ body{
     margin-top: auto;
     margin-bottom: 8px;
 }
+
+button{
+    background-color: #596D48;
+}
+
+.riBot span{
+    color: #596D48;
+}

@@ -1,3 +1,65 @@
+@font-face{
+    font-family: "nordic";
+    src: url(fonts/Norse.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nordic";
+    src: url(fonts/Norsebold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
+}
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    background-image: url(pictures/background_image.jpg);
+    background-size: cover;
+    width: 33vw;
+    height: 100vh;
+}
+
+.pictureTop{
+    color: white;
+    display: flex;
+    font-weight: bold;
+    background-color: color-mix(in srgb, black 50%, transparent);
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    container-type: size;
+    position: relative;
+    top: 220px;
+}
+
+.pictureTop img{
+    height: 90%; /*equals 90 percent of the parent*/
+}
+
+.pictureTop div{
+    font-family: "nordic", serif;
+    font-size: 80cqh; /*equals 80 percent of the parent*/
+}
+
+.pictureBot,
+.pictureBot a{
+    color: white;
+}
+
+.pictureBot{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 8px;
 }
